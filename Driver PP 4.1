@@ -1,0 +1,18 @@
+package pp41;
+//import java.util.; 
+import java.util.Scanner;
+public class Die 
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int numSides;
+		System.out.println("Enter how many sides your dice has: ");
+		numSides = input.nextInt();
+		
+		RollDie die1 = new RollDie(numSides);
+		int numberRolled = die1.roll();
+		System.out.print("Your number is: " + numberRolled);
+	}
+	}
+
