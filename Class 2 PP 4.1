@@ -1,0 +1,29 @@
+package pp41;
+
+//import java.util.Scanner;
+import java.util.Random;
+
+
+public class RollDie 
+	{
+		
+	Random rand = new Random();
+	private int NumSides;
+	
+	public RollDie(int numSides)
+	{
+		NumSides = numSides;
+		roll();
+	}
+	public int roll()
+	{
+		int numberRolled;
+		numberRolled = rand.nextInt(NumSides) + 1;
+		return numberRolled;
+	}
+
+
+
+	}
+
+
